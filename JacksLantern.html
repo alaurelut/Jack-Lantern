@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jack's Lantern</title>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+    <link rel = "stylesheet" type = "text/css" href = "./css/jack.css">
+    <script type="text/javascript" src="./js/init.js"></script>
+    <script type="text/javascript" src="./js/run.js"></script>
+    <script type="text/javascript" src="./js/canvasBuffer.js"></script>
+    <script type="text/javascript" src="./js/varGlobal.js"></script>
+    <script type="text/javascript" src="./js/run.js"></script>
+    <script type="text/javascript" src="./js/event.js"></script>
+    <script type="text/javascript" src="./js/canvasGestion.js"></script>
+    <script type="text/javascript" src="./js/class/Player.js"></script>
+    <script type="text/javascript" src="./js/class/Ground.js"></script>
+    <script type="text/javascript" src="./js/class/Enemy.js"></script>
+    <script type="text/javascript" src="./js/class/Tesson.js"></script>
+    <script type="text/javascript" src="./js/class/Interrupteur.js"></script>
+    <script type="text/javascript" src="./js/class/Wall.js"></script>
+    <script type="text/javascript" src="./js/class/Aura.js"></script>
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <script type="text/javascript" src="./js/loader.js"></script>
+       <script type="text/javascript" src="./js/class/Prisme.js"></script>
+  </head>
+   <body oncontextmenu="return player.removeLight();" > 
+  <div id="menu">
+    <img src="images/logo.jpg" id="logo"  />
+    <img src="images/play.png" id="start" onmouseover="javascript:this.src='images/playover.png';" onmouseout="javascript:this.src='images/play.png';"  />
+  </div>
+  <div id="jeu">
+            <canvas id="myCanvas" width="300px" height="150px"></canvas>
+            <canvas id="myCanvas2" width="300px" height="150px"></canvas>
+      <canvas id="canvas1" class="canvas"  height = "650px" width = "1200px"></canvas>
+      <canvas id="canvas2" class="canvas"  height = "650px" width = "1200px"></canvas>
+      <canvas id="canvas3" class="canvas"  height = "650px" width = "1200px"></canvas>
+
+    <div id="hud">
+        <div id="white" class ="circle" onclick="player.white()"><img id="imgWhite" src="./images/tessonSprite/Gwhite2.png" width= '60px', height= '60px'></div>
+        <div id="yellow" class ="circle" onclick="player.yellow()"><img id="imgYellow" src="./images/tessonSprite/Gyellow2.png" width= '60px', height= '60px'></div>
+        <div id="red" class ="circle"  onclick="player.red()"><img id="imgRed" src="./images/tessonSprite/Gred2.png" width= '60px', height= '60px'></div>
+        <div id="blue" class ="circle"  onclick="player.blue()"><img id="imgBlue" src="./images/tessonSprite/Gblue2.png" width= '60px', height= '60px'></div>
+        <audio id="fond" autoplay loop >
+            <source src="son/Nox Arcana - Labyrinth of Dreams.mp3">
+        </audio>
+        <div  id="off" onclick="document.getElementById('fond').pause();"></div>
+        <div id="on" onclick="document.getElementById('fond').play();"></div>
+        <div id="lantern">
+            <img src="images/Lantern1.png" id ="lanterne">
+            <img id="imgVide" src="" width= '60px', height= '60px'>
+        </div>
+     </div>
+  </body>
+</html>

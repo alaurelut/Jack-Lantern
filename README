@@ -1,0 +1,22 @@
+/*******************************************************************************************************
+*	Readme Project GameWeek With only GDP1 A:B
+*
+********************************************************************************************************/
+
+Projet by : Alexis DAVID, Axel LAURELUT, Yann VERET, Stephan AITIER, Benjamin WINCKELL
+
+
+Doc du projet :
+
+-definir une class (un objet) dans un document (ne pas coder tous dans un seul fichier)
+	declaration d'une class: var MaClasse = function(){}=======> une majuscule au pour la premiere lettre , Un nom de class parlant pas de class toto mais player ennemies etc correspondant a la fonction de l'objet.
+
+
+-declaration des variables privés interne a une class ou fonction : var _maVar;======> un undescore devant chaques variables privés
+
+
+-declaration des variables global appeler un peu partout dans le projet : regrouper dans dans un seul fichier nommé varGlobal.js
+
+-declaration des inputs du projet : dans un fichier event.js ( à préciser)
+
+puis pour le reste on se démerdera !!!
